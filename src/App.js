@@ -1,9 +1,20 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import FutureClients from "./pages/FutureClients";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hair by Maddy Kate</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/future-clients" element={<FutureClients />} />
+      </Routes>
     </div>
   );
 }
