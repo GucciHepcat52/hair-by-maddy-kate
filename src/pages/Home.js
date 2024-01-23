@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import hairstyle from "../assets/hairstyle.jpeg";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -20,8 +21,32 @@ export default function Home() {
           <h3>Blonde | Lived-in Color | Extensions</h3>
         </div>
       </div>
-      <div className="review"></div>
-      <div className="review"></div>
+      <div className="review">
+        <img
+          src={hairstyle}
+          alt="client-one"
+          style={{ maxWidth: "100%", height: "auto" }}
+        />
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat." - Ashley P.
+        </p>
+      </div>
+      <div className="review">
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat." - Ashley P.
+        </p>
+        <img
+          src={hairstyle}
+          alt="client-one"
+          style={{ maxWidth: "100%", height: "auto" }}
+        />
+      </div>
     </div>
   );
 }
