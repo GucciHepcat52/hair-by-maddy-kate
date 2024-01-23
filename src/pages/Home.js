@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import hairstyle from "../assets/hairstyle.jpeg";
+import { IconButton } from "@mui/material";
+import { Menu as MenuIcon } from "@mui/icons-material";
+import Menu from "../components/Menu";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -14,6 +16,16 @@ export default function Home() {
 
   return (
     <div className="Main">
+      <Menu />
+      <IconButton
+        className="menuIconButton"
+        edge="start"
+        color="inherit"
+        aria-label="menu"
+        onClick={() => alert("Menu button clicked!")}
+      >
+        <MenuIcon />
+      </IconButton>
       <div className="Title">
         <div className={`slides slide${currentSlide}`}></div>
         <div className="title-text">
@@ -21,7 +33,7 @@ export default function Home() {
           <h3>Blonde | Lived-in Color | Extensions</h3>
         </div>
       </div>
-      <div className="review">
+      {/* <div className="review">
         <img
           src={hairstyle}
           alt="client-one"
@@ -46,7 +58,7 @@ export default function Home() {
           alt="client-one"
           style={{ maxWidth: "100%", height: "auto" }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

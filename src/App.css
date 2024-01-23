@@ -25,6 +25,13 @@
   align-items: center;
 }
 
+.Main .menuIconButton {
+  position: absolute;
+  left: 1vh;
+  top: 0;
+  z-index: 3;
+}
+
 .slides {
   position: absolute;
   width: 100%;
@@ -72,18 +79,32 @@
 
 .review {
   box-sizing: border-box;
+  font-family: "Cormorant", sans-serif;
   background-color: white;
   height: 25rem;
   width: 100%;
-  padding: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .review img {
+  box-sizing: border-box;
   height: 100%;
-  width: 25%;
+  width: 20rem;
+  /* border: 2px solid black; */
+}
+
+.review p {
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  height: 100%;
+  width: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
 }
 
 @media (max-width: 768px) {
@@ -94,6 +115,37 @@
   .title-text {
     margin-top: 25rem;
     font-size: 15px;
+  }
+  .review {
+    box-sizing: border-box;
+    font-family: "Cormorant", sans-serif;
+    background-color: white;
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4vh;
+    /* border: 2px solid black; */
+  }
+
+  .review img {
+    box-sizing: border-box;
+    height: 100%;
+    width: 20rem;
+    /* border: 2px solid black; */
+  }
+
+  .review p {
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 25rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
   }
 }
 
@@ -108,9 +160,13 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 410px) {
   .title-text {
     font-size: 14px;
+  }
+
+  .review p {
+    width: 20rem;
   }
 }
 
