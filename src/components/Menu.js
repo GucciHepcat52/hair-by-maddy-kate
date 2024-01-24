@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Components.css";
 import { Button } from "@mui/material";
 import { Instagram } from "@mui/icons-material";
