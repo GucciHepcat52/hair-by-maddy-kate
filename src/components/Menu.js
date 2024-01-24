@@ -1,23 +1,34 @@
 import React, { useState, useEffect } from "react";
 import "./Components.css";
+import { Button } from "@mui/material";
+import { Instagram } from "@mui/icons-material";
 
 import { Link } from "react-router-dom";
 
-export default function Menu() {
+export default function Menu({ isActive }) {
   return (
-    <div>
-      <Link to={"/"}>
-        <h3>Home</h3>
+    <div className={`Menu ${isActive ? "active" : ""}`}>
+      <Link className="link" to={"/"}>
+        <h3>HOME</h3>
       </Link>
-      <Link to={"/about"}>
-        <h3>About</h3>
+      <Link className="link" to={"/about"}>
+        <h3>ABOUT</h3>
       </Link>
-      <Link to={"/services"}>
-        <h3>Services</h3>
+      <Link className="link" to={"/services"}>
+        <h3>SERVICES</h3>
       </Link>
-      <Link to={"/future-clients"}>
-        <h3>Future Clients</h3>
+      <Link className="link" to={"/future-clients"}>
+        <h3>FUTURE CLIENTS</h3>
       </Link>
+      <Button className="socials">
+        <a
+          href="https://www.instagram.com/hairbymaddykate/"
+          target="blank"
+          style={{ color: "black" }}
+        >
+          <Instagram />
+        </a>
+      </Button>
     </div>
   );
 }

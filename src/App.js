@@ -8,7 +8,7 @@ import FutureClients from "./pages/FutureClients";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App fade-in">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -1,0 +1,37 @@
+.Menu {
+  position: absolute;
+  box-sizing: border-box;
+  font-family: "Cormorant", sans-serif;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  left: -30rem;
+  top: 2.25rem;
+  height: 90%;
+  width: 20rem;
+  z-index: 3;
+  transition: left 0.5s ease-in;
+  border: 2px solid lightgray;
+}
+
+.Menu.active {
+  left: 0; /* Slide in when active */
+}
+
+.Menu .link {
+  text-decoration: none;
+  color: black;
+}
+
+.Menu .socials {
+  position: absolute;
+  bottom: 2vh;
+}
+
+@media (max-width: 430px) {
+  .Menu {
+    width: 100%;
+  }
+}
