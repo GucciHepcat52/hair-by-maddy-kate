@@ -99,9 +99,9 @@
   color: black;
   border: 2px solid black;
   text-align: center;
-  width: 35%;
-  height: 50%;
   padding: 0 10%;
+  height: 50%;
+  width: 40%;
 }
 
 .title-text h1 {
@@ -115,6 +115,10 @@
 
 .about-text h1 {
   border-bottom: 2px solid black;
+}
+
+.about-text h3 {
+  font-size: 25px;
 }
 
 .review {
@@ -152,10 +156,16 @@
     height: 100vh;
     width: 100%;
   }
+
   .title-text {
     margin-top: 25rem;
     font-size: 15px;
   }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
   .review {
     box-sizing: border-box;
     font-family: "Cormorant", sans-serif;
@@ -197,6 +207,10 @@
   .title-text {
     margin-top: 20rem;
     font-size: 15px;
+  }
+  .about-text {
+    height: 78%;
+    width: 70%;
   }
 }
 
