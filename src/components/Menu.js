@@ -20,6 +20,7 @@ export default function Menu({ isActive }) {
       <Link className="link" to={"/future-clients"}>
         <h3>FUTURE CLIENTS</h3>
       </Link>
+      <h3>BOOK NOW</h3>
       <Button className="socials">
         <a
           href="https://www.instagram.com/hairbymaddykate/"

@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div className="Main">
+    <div className="Main fade-in">
       {activeMenu ? (
         <IconButton
           className="menuIconButton"
@@ -44,7 +44,7 @@ export default function Home() {
         </IconButton>
       )}
       <Menu isActive={activeMenu} />
-      <div className="Title">
+      <div className="Content">
         <div className={`slides slide${currentSlide}`}></div>
         <div className="title-text">
           <h1>HAIR BY MADDY KATE</h1>
