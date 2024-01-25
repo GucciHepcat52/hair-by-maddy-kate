@@ -36,6 +36,9 @@ export default function Services() {
       <Menu isActive={activeMenu} />
       <div className="Content">
         <div className="slides services-slide"></div>
+        <div className="services-text">
+          <h1>SERVICES</h1>
+        </div>
       </div>
     </div>
   );

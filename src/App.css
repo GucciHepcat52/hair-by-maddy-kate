@@ -100,7 +100,18 @@
   border: 2px solid black;
   text-align: center;
   padding: 0 10%;
-  height: 50%;
+  /* height: 50%; */
+  width: 40%;
+}
+
+.services-text {
+  position: absolute;
+  z-index: 2;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  padding: 0 10%;
+  /* height: 50%; */
   width: 40%;
 }
 
@@ -119,6 +130,10 @@
 
 .about-text h3 {
   font-size: 25px;
+}
+
+.services-text h1 {
+  border-bottom: 2px solid black;
 }
 
 .review {
@@ -209,7 +224,7 @@
     font-size: 15px;
   }
   .about-text {
-    height: 78%;
+    /* height: 78%; */
     width: 70%;
   }
 }
