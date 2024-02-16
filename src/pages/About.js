@@ -33,7 +33,7 @@ export default function About() {
           <MenuIcon />
         </IconButton>
       )}
-      <Menu isActive={activeMenu} />
+      <Menu isActive={activeMenu} activateMenu={activateMenu} />
       <div className="about-text">
         <h1>ABOUT ME</h1>
         <p style={{ marginBottom: 0 }}>

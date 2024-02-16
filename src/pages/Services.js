@@ -33,7 +33,7 @@ export default function Services() {
           <MenuIcon />
         </IconButton>
       )}
-      <Menu isActive={activeMenu} />
+      <Menu isActive={activeMenu} activateMenu={activateMenu} />
       <div className="services-text">
         <h1>Services</h1>
         <div>

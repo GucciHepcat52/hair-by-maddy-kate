@@ -5,7 +5,7 @@ import { Instagram } from "@mui/icons-material";
 
 import { Link } from "react-router-dom";
 
-export default function Menu({ isActive }) {
+export default function Menu({ isActive, activateMenu }) {
   return (
     <div className={`Menu ${isActive ? "active" : ""}`}>
       <Link className="link" to={"/"}>
@@ -20,7 +20,9 @@ export default function Menu({ isActive }) {
       <Link className="link" to={"/gallery"}>
         <h3>GALLERY</h3>
       </Link>
-      <h3>BOOK NOW</h3>
+      <h3 style={{ cursor: "pointer" }} onClick={activateMenu}>
+        BOOK NOW
+      </h3>
       <Button className="socials">
         <a
           href="https://www.instagram.com/hairbymaddykate/"

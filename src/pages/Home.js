@@ -43,7 +43,7 @@ export default function Home() {
           <MenuIcon />
         </IconButton>
       )}
-      <Menu isActive={activeMenu} />
+      <Menu isActive={activeMenu} activateMenu={activateMenu} />
       <div className="title-text">
         <h1>HAIR BY MADDY KATE</h1>
         <h3>Blonde | Lived-in Color | Extensions</h3>
