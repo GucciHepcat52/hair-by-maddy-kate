@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div className="Main fade-in">
+    <div className={`Main fade-in slide${currentSlide}`}>
       {activeMenu ? (
         <IconButton
           className="menuIconButton"
@@ -44,39 +44,10 @@ export default function Home() {
         </IconButton>
       )}
       <Menu isActive={activeMenu} />
-      <div className="Content">
-        <div className={`slides slide${currentSlide}`}></div>
-        <div className="title-text">
-          <h1>HAIR BY MADDY KATE</h1>
-          <h3>Blonde | Lived-in Color | Extensions</h3>
-        </div>
+      <div className="title-text">
+        <h1>HAIR BY MADDY KATE</h1>
+        <h3>Blonde | Lived-in Color | Extensions</h3>
       </div>
-      {/* <div className="review">
-        <img
-          src={hairstyle}
-          alt="client-one"
-          style={{ maxWidth: "100%", height: "auto" }}
-        />
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat." - Ashley P.
-        </p>
-      </div>
-      <div className="review">
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat." - Ashley P.
-        </p>
-        <img
-          src={hairstyle}
-          alt="client-one"
-          style={{ maxWidth: "100%", height: "auto" }}
-        />
-      </div> */}
     </div>
   );
 }

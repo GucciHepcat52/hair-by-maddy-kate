@@ -11,7 +11,7 @@ export default function Services() {
     setActiveMenu((prevValue) => !prevValue);
   }
   return (
-    <div className="Main fade-in">
+    <div className="Main fade-in services-slide">
       {activeMenu ? (
         <IconButton
           className="menuIconButton"
@@ -34,11 +34,8 @@ export default function Services() {
         </IconButton>
       )}
       <Menu isActive={activeMenu} />
-      <div className="Content">
-        <div className="slides services-slide"></div>
-        <div className="services-text">
-          <h1>SERVICES</h1>
-        </div>
+      <div className="services-text">
+        <h1>Services</h1>
       </div>
     </div>
   );
