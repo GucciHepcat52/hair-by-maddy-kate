@@ -17,8 +17,8 @@ export default function Menu({ isActive }) {
       <Link className="link" to={"/services"}>
         <h3>SERVICES</h3>
       </Link>
-      <Link className="link" to={"/future-clients"}>
-        <h3>FUTURE CLIENTS</h3>
+      <Link className="link" to={"/gallery"}>
+        <h3>GALLERY</h3>
       </Link>
       <h3>BOOK NOW</h3>
       <Button className="socials">
