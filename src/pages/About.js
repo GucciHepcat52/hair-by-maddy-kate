@@ -64,7 +64,7 @@ export default function About() {
           referring friends, and continuing to come back. I love and appreciate
           every single one of you. Hope to see you in my chair soon!!
         </p>
-        <h2 style={{ borderBottom: "2px solid black" }}>Fun Facts</h2>
+        <h2 style={{ borderBottom: "2px solid black" }}>FUN FACTS</h2>
         <ul style={{ textAlign: "left" }}>
           <li>Born in CA, raised in AZ</li>
           <li>

@@ -35,47 +35,48 @@ export default function Services() {
       )}
       <Menu isActive={activeMenu} activateMenu={activateMenu} />
       <div className="services-text">
-        <h1>Services</h1>
+        <h1 style={{ marginBottom: "10px" }}>SERVICES</h1>
         <div>
           <ul
             style={{
               textAlign: "left",
             }}
           >
-            <li>1 Row Extension Initial Install</li>
-            <li>1 Row Extension Move-up</li>
-            <li>2 Row Extension Initial Install</li>
-            <li>2 Row Extension Move-up</li>
+            <li>1 Row Extension Initial Install ($110+)</li>
+            <li>1 Row Extension Move-up ($90+)</li>
+            <li>2 Row Extension Initial Install ($220+)</li>
+            <li>2 Row Extension Move-up ($180+)</li>
           </ul>
           <ul
             style={{
               textAlign: "left",
             }}
           >
-            <li>Full Highlight</li>
-            <li>Partial Highlight</li>
-            <li>Full Balayage</li>
-            <li>Partial Balayage</li>
+            <li>Full Highlight ($185+)</li>
+            <li>Partial Highlight ($165+)</li>
+            <li>Full Balayage ($185+)</li>
+            <li>Partial Balayage ($165+)</li>
           </ul>
           <ul
             style={{
               textAlign: "left",
             }}
           >
-            <li>All-over Color (Dark)</li>
-            <li>Root Re-touch (Dark)</li>
-            <li>Trim Added onto Color Service</li>
-            <li>Deep Conditioning Treatment</li>
+            <li>All-over Color (Dark) ($130+)</li>
+            <li>Root Re-touch (Dark) ($90+)</li>
+            <li>Trim Added onto Color Service ($20+)</li>
+            <li>Deep Conditioning Treatment ($10+)</li>
           </ul>
           <ul
             style={{
               textAlign: "left",
             }}
           >
-            <li>Bridal/Event Updo Style</li>
-            <li>Women's Haircut</li>
-            <li>Money-piece Refresh</li>
-            <li>Toner</li>
+            <li>Bridal/Event Updo Style ($75+)</li>
+            <li>Women's Haircut ($55+)</li>
+            <li>Money-piece Refresh ($100+)</li>
+            <li>Toner ($65+)</li>
+            <li>Extra Bowl Mixture ($15+)</li>
           </ul>
         </div>
       </div>

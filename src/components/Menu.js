@@ -73,7 +73,7 @@ export default function Menu({ isActive, activateMenu }) {
                 style={{ color: "black" }}
               >
                 {/* <Instagram /> */}
-                CLICK HERE
+                BOOK NOW
               </a>
             </Button>
           </Box>
