@@ -1,5 +1,5 @@
 .Menu {
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   font-family: "Cormorant", sans-serif;
   padding: 2vh;
@@ -17,7 +17,7 @@
 }
 
 .Menu.active {
-  left: 0; /* Slide in when active */
+  left: 0;
 }
 
 .Menu .link {

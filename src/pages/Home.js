@@ -3,25 +3,52 @@ import { IconButton } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
 import { KeyboardArrowLeft } from "@mui/icons-material";
 import Menu from "../components/Menu";
+import pic1 from "../assets/profile-pic-1.jpg";
+import pic2 from "../assets/profile-pic-2.jpg";
+import pic3 from "../assets/profile-pic-3.jpg";
 
 export default function Home() {
   const [activeMenu, setActiveMenu] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [preloadedImages, setPreloadedImages] = useState([]);
+  // const slides = [
+  //   <img key={1} src={pic1} alt="pic one" className="slide" loading="lazy" />,
+  //   <img key={2} src={pic2} alt="pic two" className="slide" loading="lazy" />,
+  //   <img key={3} src={pic3} alt="pic three" className="slide" loading="lazy" />,
+  // ];
 
   useEffect(() => {
+    const imagesToPreload = [pic1, pic2, pic3];
+    const preloaded = imagesToPreload.map((src, index) => {
+      const img = new Image();
+      img.src = src;
+      return (
+        <img
+          key={index + 1}
+          src={src}
+          alt={`pic ${index + 1}`}
+          className="slide"
+          loading="lazy"
+        />
+      );
+    });
+    setPreloadedImages(preloaded);
+
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === 3 ? 1 : prev + 1));
+      setSlideIndex((prevIndex) => (prevIndex + 1) % preloaded.length);
     }, 7000);
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [preloadedImages.length]);
 
   function activateMenu() {
     setActiveMenu((prevValue) => !prevValue);
   }
 
   return (
-    <div className={`Main fade-in slide${currentSlide}`}>
+    <div className={`Main fade-in`}>
       {activeMenu ? (
         <IconButton
           className="menuIconButton"
@@ -48,6 +75,7 @@ export default function Home() {
         <h1>HAIR BY MADDY KATE</h1>
         <h3>Blonde | Lived-in Color | Extensions</h3>
       </div>
+      <div className="slide-container">{preloadedImages[slideIndex]}</div>
     </div>
   );
 }

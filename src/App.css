@@ -21,6 +21,7 @@
 }
 
 .Main {
+  position: relative;
   font-family: "Cormorant", sans-serif;
   width: 80%;
   background-size: cover;
@@ -33,24 +34,30 @@
 }
 
 .Main .menuIconButton {
-  position: absolute;
+  position: fixed;
   left: 1vh;
   top: 0;
   z-index: 3;
 }
 
-.slide1 {
-  background-image: url("./assets/profile-pic-1.jpg");
-  opacity: 1;
+.slide-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
 }
 
-.slide2 {
-  background-image: url("./assets/profile-pic-2.jpg");
-  opacity: 1;
-}
-
-.slide3 {
-  background-image: url("./assets/profile-pic-3.jpg");
+.slide {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
   opacity: 1;
 }
 
@@ -73,6 +80,7 @@
   margin-top: 50vh;
   font-size: 35px;
   padding: 0 10%;
+  z-index: 1;
 }
 
 .title-text h1 {
