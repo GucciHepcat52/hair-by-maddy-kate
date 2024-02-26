@@ -42,6 +42,7 @@ export default function Services() {
               textAlign: "left",
             }}
           >
+            <h3>EXTENSIONS</h3>
             <li>1 Row Extension Initial Install ($110+)</li>
             <li>1 Row Extension Move-up ($90+)</li>
             <li>2 Row Extension Initial Install ($220+)</li>
@@ -52,31 +53,34 @@ export default function Services() {
               textAlign: "left",
             }}
           >
+            <h3>BLONDES</h3>
             <li>Full Highlight ($185+)</li>
             <li>Partial Highlight ($165+)</li>
             <li>Full Balayage ($185+)</li>
             <li>Partial Balayage ($165+)</li>
+            <li>Money-piece Refresh ($100+)</li>
+            <li>Extra Bowl Mixture ($15+)</li>
           </ul>
           <ul
             style={{
               textAlign: "left",
             }}
           >
+            <h3>COLOR</h3>
             <li>All-over Color (Dark) ($130+)</li>
             <li>Root Re-touch (Dark) ($90+)</li>
-            <li>Trim Added onto Color Service ($20+)</li>
-            <li>Deep Conditioning Treatment ($10+)</li>
+            <li>Toner ($75+)</li>
           </ul>
           <ul
             style={{
               textAlign: "left",
             }}
           >
-            <li>Bridal/Event Updo Style ($75+)</li>
+            <h3>HAIRCUTS/STYLES</h3>
             <li>Women's Haircut ($55+)</li>
-            <li>Money-piece Refresh ($100+)</li>
-            <li>Toner ($65+)</li>
-            <li>Extra Bowl Mixture ($15+)</li>
+            <li>Trim Added onto Color Service ($20+)</li>
+            <li>Bridal/Event Updo Style ($75+)</li>
+            <li>Deep Conditioning Treatment ($10+)</li>
           </ul>
         </div>
       </div>

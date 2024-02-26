@@ -44,6 +44,13 @@ export default function Menu({ isActive, activateMenu }) {
       <Link className="link" to={"/services"}>
         <h3>SERVICES</h3>
       </Link>
+      <a
+        className="link"
+        href="https://www.amazon.com/shop/maddybreen_"
+        target="blank"
+      >
+        <h3>SHOP</h3>
+      </a>
       {/* <Link className="link" to={"/gallery"}>
         <h3>GALLERY</h3>
       </Link> */}

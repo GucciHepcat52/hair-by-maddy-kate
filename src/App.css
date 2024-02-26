@@ -23,7 +23,7 @@
 .Main {
   position: relative;
   font-family: "Cormorant", sans-serif;
-  width: 80%;
+  width: 60%;
   background-size: cover;
   background-position: center;
   transition: opacity 0.5s ease;
@@ -68,7 +68,7 @@
 }
 
 .services-slide {
-  background-image: url("./assets/services.jpg");
+  background-image: url("./assets/services-image.jpg");
   opacity: 1;
   /* filter: blur(4px); */
 }
@@ -110,14 +110,35 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 90%;
+  /* border: 2px solid black; */
 }
 
 .services-text ul {
+  /* border: 2px solid black; */
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  padding: 0;
+}
+
+.services-text ul h3 {
+  align-self: center;
 }
 
 .services-text li {
+  list-style: none;
   margin-bottom: 5px;
+  padding: 0;
+  margin-left: 1.5rem;
+}
+
+.services-text li::before {
+  content: "-"; /* Use a dash as a content before each list item */
+  display: inline-block;
+  width: 1em; /* Adjust the width to control spacing */
+  margin-left: -1.5rem; /* Offset to align with the text */
+  font-weight: bold; /* Optional: Make the dash bold */
 }
 
 .about-text h1 {
