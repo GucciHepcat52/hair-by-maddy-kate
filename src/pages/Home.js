@@ -3,9 +3,9 @@ import { IconButton } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
 import { KeyboardArrowLeft } from "@mui/icons-material";
 import Menu from "../components/Menu";
-import pic1 from "../assets/profile-pic-1.jpg";
-import pic2 from "../assets/profile-pic-2.jpg";
-import pic3 from "../assets/profile-pic-3.jpg";
+import pic1 from "../assets/profile-pic-1-2.jpg";
+import pic2 from "../assets/profile-pic-2-2.jpg";
+import pic3 from "../assets/profile-pic-3-2.jpg";
 
 export default function Home() {
   const [activeMenu, setActiveMenu] = useState(false);
@@ -36,7 +36,7 @@ export default function Home() {
 
     const interval = setInterval(() => {
       setSlideIndex((prevIndex) => (prevIndex + 1) % preloaded.length);
-    }, 7000);
+    }, 3000);
 
     return () => {
       clearInterval(interval);
@@ -57,7 +57,7 @@ export default function Home() {
           aria-label="menu"
           onClick={activateMenu}
         >
-          <KeyboardArrowLeft />
+          <KeyboardArrowLeft style={{ fontSize: "2rem" }} />
         </IconButton>
       ) : (
         <IconButton
@@ -67,7 +67,7 @@ export default function Home() {
           aria-label="menu"
           onClick={activateMenu}
         >
-          <MenuIcon />
+          <MenuIcon style={{ fontSize: "2rem" }} />
         </IconButton>
       )}
       <Menu isActive={activeMenu} activateMenu={activateMenu} />
