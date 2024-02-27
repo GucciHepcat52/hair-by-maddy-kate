@@ -51,11 +51,11 @@ export default function About() {
           even started my own hair salon called “Pizzazz” in 3rd grade where I
           would wash girls hair in my sink at home. I would watch never ending
           YouTube videos to perfect braids and learn all that I could. I
-          couldn't get enough. In highschool, did most of my senior year classes
-          online so I could go to hair school and start living my dream as soon
-          as possible. Every day since then has been an absolute dream. I can't
-          believe I get to do what I love and continue to live my childhood
-          dream everyday.
+          couldn't get enough. In highschool, I did most of my senior year
+          classes online so I could go to hair school and start living my dream
+          as soon as possible. Every day since then has been an absolute dream.
+          I can't believe I get to do what I love and continue to live my
+          childhood dream everyday.
         </p>
         <p>
           Thank you so much for following along and supporting me. As I have
