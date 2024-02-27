@@ -37,7 +37,8 @@ export default function About() {
       <div className="about-text">
         <h1>ABOUT ME</h1>
         <p style={{ marginBottom: 0 }}>
-          Hi!! I'm Maddy the stylist behind the chair and lover all things hair.
+          Hi!! I'm Maddy the stylist behind the chair and lover of all things
+          hair.
         </p>
         <br />
         <p style={{ marginBottom: 0, marginTop: 0 }}>
